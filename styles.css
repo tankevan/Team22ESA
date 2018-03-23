@@ -6,14 +6,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
-.grid-x {
-  height: 100%;
+h2 {
+  margin-top: 0.5rem;
 }
 
-.cell.large-2 {
+h4, h5, h6 {
+  margin-bottom: 0.7rem;
+}
+
+.cell.large-2.header {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +30,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cell.large-2  h4{
+  margin-top: 0;
   margin-bottom: 1.2rem;
   color: white;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.cell.large-2 h4 a {
+  color: white;
 }
 
 .cell.large-2  ul{
@@ -52,8 +65,45 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   padding: 2rem;
   background: #F4F4F4;
+  min-height: 100vh;
 }
 
 td {
+  border-style: none;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.main_content td {
   padding: 5px;
+  border-style: solid;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.diagram-label {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* table styling for sub pages */
+table.content-table {
+  margin: 0 auto;
+}
+
+.content-table td {
+  border-style: solid;
+  padding: 7px;
+}
+
+.table-header td {
+  width: 33%;
+  font-weight: bold;
+  text-align: center;
 }

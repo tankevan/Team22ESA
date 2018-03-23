@@ -1,0 +1,11 @@
+.table-header td {
+  padding: 1rem;
+}
+
+tr:nth-child(1) td {
+  padding: 7px;
+}
+
+td:nth-child(1),td:nth-child(2), td:nth-child(3) {
+  width: 25%;
+}

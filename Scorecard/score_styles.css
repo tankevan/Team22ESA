@@ -1,0 +1,7 @@
+table.content-table {
+  margin: 0;
+}
+
+td:nth-child(2) {
+  text-align: center;
+}

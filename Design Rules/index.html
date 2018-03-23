@@ -6,47 +6,81 @@ th {border: 1px solid black;padding:5px;text-align:center;}
 td {border: 1px solid black;padding:5px;text-align:left;}
 </style>  
 <head>
-<!-- Add a suitable title for this page -->
-<title>Design Rules</title>
+  <link rel="stylesheet" href="../foundation/css/foundation.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="./designrules_styles.css"/>
+  <!-- Add a suitable title for this page -->
+  <title>Design Rules</title>
 </head>
 <body>
   <div class='grid-x'>
-    <div class='cell large-2'>
-      Table of Contents
+    <div class='cell large-2 header'>
+      <h4><a href="../index.html">Team 22 ESA</a></h4>
       <ul>
-        <li><a href="Concept Selection/index.html">Cover Page</a></li>
-        <li>Mission Statement</li>
-        <li>User Characteristics</li>
-        <li>Influence Diagrams</li>
-        <li>Operational Concepts</li>
-        <li>Use Cases and Scenarios</li>
-        <li>Design Alternatives</li>
-        <li>Scorecard</li>
-        <li>Concept Selection</li>
-        <li>Product Family and Release Schedule</li>
-        <li>Product Family and Release Schedule</li>
-        <li>Design Teams</li>
-        <li>Design Rules</li>
-        <li>Modes of Operation</li>
-        <li>Non-function Requirements</li>
-        <li>Requirements Allocation</li>
-        <li>Integration and Test Plan</li>
+        <li><a href="../Cover Page/index.html">Cover Page</a></li>
+        <li><a href="../Mission Statement/index.html">Mission Statement</a></li>
+        <li><a href="../User Characteristics/index.html">User Characteristics</a></li>
+        <li><a href="../Influence Diagrams/index.html">Influence Diagrams</a></li>
+        <li><a href="../Operational Concept/index.html">Operational Concept</a></li>
+        <li><a href="../Use Cases and Scenarios/index.html">Use Cases and Scenarios</a></li>
+        <li><a href="../Design Alternatives/index.html">Design Alternatives</a></li>
+        <li><a href="../Scorecard/index.html">Scorecard</a></li>
+        <li><a href="../Integrated Concepts/index.html">Integrated Concepts</a></li>
+        <li><a href="../Concept Selection/index.html">Concept Selection</a></li>
+        <li><a href="../Product Family and Release Schedule/index.html">Product Family and Release Schedule</a></li>
+        <li><a href="../Design Teams/index.html">Design Teams</a></li>
+        <li><a href="../Design Rules/index.html">Design Rules</a></li>
+        <li><a href="../Modes of Operation/index.html">Modes of Operation</a></li>
+        <li><a href="../Non-functional Requirements/index.html"> Non-functional Requirements</a></li>
+        <li><a href="../Requirements Allocation/index.html">Requirements Allocation</a></li>
       </ul>
     </div>
+    <div class='cell large-2'>1</div>
     <div class='cell large-10'>
       <!-- What is the name of this folder? -->
       <h2>Design Rules</h2>
-
-      <table>
-      <!-- Add header row -->
-      <tr>
-        <th>Link</th>
-        <th>Description</th>
-      </tr>
-      <!-- Add rows with <tr> tag. Be sure to close with </tr> tag -->
-
-        
-
+      <table class="content-table">
+        <tr class="table-header">
+          <td></td>
+          <td>Design Rules</td>
+          <td>Rationale</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Components should only interact with other components if described in the DSM</td>
+          <td>To prevent unplanned effects of user actions; also allows for easier debugging when something goes wrong</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Components that have more than 2 sub-systems should be split into separate components</td>
+          <td>During development, more features could be discovered to be necessary in each component. To keep a clear separation of functions, the component should be split into two or more components.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Changes to component interactions due to clarifications should be updated in the DSM</td>
+          <td>Teams should have the ability to update the DSM to reflect newly-found/redundant interactions in order for the DSM to accurately describe the problem</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>All teams are to be notified of any changes in the DSM</td>
+          <td>Keeps everyone in the loop of architectural changes so that they can adjust their plans accordingly. It is not likely for teams to be overloaded with information due to the limited number of components. This measure is necessary to prevent any unintended effects</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Work iteratively</td>
+          <td>Implementing the functionality of a component at a low-resolution will help to validate the interaction between components quickly and help to determine if the team has made any architectural oversights early in the process</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>All graphical assets shall be a 20x20px iamge drawn in the style of pixel art</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>All trash should be at most 30% of the user's avatar</td>
+          <td></td>
+        </tr>
       </table>
     </div>
   </div>
